@@ -12,6 +12,7 @@ RUN pip install -r requirements.txt
 #copy the app to the current directory
 COPY . .
 
+EXPOSE 5000
 
 #run the app
 CMD ["python", "-m", "flask", "run","--host=0.0.0.0"]
