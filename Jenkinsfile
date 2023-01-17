@@ -1,16 +1,10 @@
 pipeline {
-    environment {
-        registry = "hugues4049/https://github.com/Hugues4049/CI_WITH_GITHUB"
-        registryCredential = 'dockerhub_id'
-        dockerImage = ''
-    }
-
     agent any
 
     stages {
-        stage('Build our image') {
+        stage('Build from github') {
             steps {
-                dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                echo 'build...'
             }
         }
         stage('Test') {
