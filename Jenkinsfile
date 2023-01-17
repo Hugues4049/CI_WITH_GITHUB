@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build from github') {
             steps {
-                '''sh 'docker build -t jenkins'''
                 echo 'build...'
             }
         }
