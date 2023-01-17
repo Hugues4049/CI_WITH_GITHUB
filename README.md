@@ -1,4 +1,4 @@
-# CI-with-github
+# CI-with-github demo 
 
 run the code:
 
