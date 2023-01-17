@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'deploying....'
-                sh 'python3 -m unittest'
+                sh 'run python3 -m unittest'
             }
         }
         stage('Deploy') {
