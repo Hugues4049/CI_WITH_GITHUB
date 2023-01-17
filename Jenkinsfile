@@ -15,16 +15,19 @@ pipeline {
     agent any
 
     stages {
-        stage('build from github') {
+        stage('Build from github') {
             steps {
-                echo 'fetch code'
-                echo 'build code'
+                sh 'docker build .'
             }
         }
-        stage('test from github') {
+        stage('Test') {
             steps {
-                echo 'running test1'
-                echo 'running test2'
+                echo 'deploying....'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
