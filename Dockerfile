@@ -8,7 +8,7 @@ COPY requirements.txt .
 
 #install the requirements
 RUN pip install -r requirements.txt
-RUN pip install flask
+
 
 #copy the app to the current directory
 COPY . .
