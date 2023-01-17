@@ -1,19 +1,21 @@
 
 """
 simple python flask application
-"""
+""" 
 
 ##########################################################################
 ## Imports
 ##########################################################################
-
+  
 import os
-
+ 
 from flask import Flask
 from flask import request
 from flask import render_template
 from flask import url_for
 from flask.json import jsonify
+
+
 
 ##########################################################################
 ## Application Setup
