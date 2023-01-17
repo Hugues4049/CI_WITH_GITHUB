@@ -1,4 +1,2 @@
 flask
 pandas
-Flask
-test_main
