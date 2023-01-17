@@ -14,8 +14,9 @@ from flask import request
 from flask import render_template
 from flask import url_for
 from flask.json import jsonify
-from test_main import *
 
+from unittest import TestCase
+from .app import *
 
 
 ##########################################################################
