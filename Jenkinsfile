@@ -6,7 +6,7 @@ pipeline {
         stage('Build from github') {
             steps {
                
-            bat 'docker build -t jenkins .'
+            sh 'docker build -t jenkins .'
             }
         }
         stage('Test') {
