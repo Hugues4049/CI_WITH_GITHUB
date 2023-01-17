@@ -1,9 +1,10 @@
-# CI-with-github
+# CI-with-github demo
 
 run the code:
 
     pip install -r requirements.txt
     python app.py
+
 
 the app runs on http://127.0.0.1:5000
 
