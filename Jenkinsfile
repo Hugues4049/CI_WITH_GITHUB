@@ -17,6 +17,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh 'python -m pip install flask'
                 sh 'python -m unittest'
             }
         }
